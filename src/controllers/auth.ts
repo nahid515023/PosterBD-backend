@@ -1,90 +1,146 @@
 import { NextFunction, Request, Response } from 'express'
 import { logInSchema, signUpSchema } from '../schema/users'
 import { prisma } from '../index'
-import { BadRequestException } from '../exception/bad-request'
-import { ErrorCode } from '../exception/root'
+import { BadRequestException } from '../exceptions/bad-request'
+import { ErrorCode } from '../exceptions/root'
 import { hashSync, compareSync } from 'bcrypt'
-import { NotFoundException } from '../exception/not-found'
+import { NotFoundException } from '../exceptions/not-found'
 
 import * as jwt from 'jsonwebtoken'
 import { JWT_SECRET } from '../secrets'
 
-// Make sure JWT_SECRET is defined with a valid secret value
-if (!JWT_SECRET) {
-  throw new Error('JWT_SECRET is not defined')
-}
+import rateLimit from 'express-rate-limit'
+import { createLogger } from '../services/logger'
+import { sanitizeInput } from '../utils/sanitizer'
 
-export const login = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  logInSchema.parse(req.body)
-  console.log(req.body)
-  const { email, password, checked } = req.body
-  const user = await prisma.user.findFirst({
-    where: {
-      email
+const logger = createLogger('auth-controller')
+
+// Rate limiting
+const signupLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 5, // 5 requests per hour
+  message: 'Too many accounts created, please try again later.'
+})
+
+// Login function
+export const login = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    logger.info('Processing login request', { email: req.body.email });
+    logInSchema.parse(req.body);
+    const { email, password, checked } = req.body;
+
+    const user = await prisma.user.findFirst({
+      where: { email }
+    });
+
+    if (!user) {
+      logger.warn('Login failed - user not found', { email });
+      return next(
+        new NotFoundException('User not found!', ErrorCode.USER_NOT_FOUND)
+      );
     }
-  })
 
-  if (!user) {
-    return next(
-      new NotFoundException('User not found!', ErrorCode.USER_NOT_FOUND)
-    )
+    if (!compareSync(password, user.password)) {
+      logger.warn('Login failed - incorrect password', { email });
+      return next(
+        new BadRequestException(
+          'Incorrect password!',
+          ErrorCode.INCORRECT_PASSWORD
+        )
+      );
+    }
+
+    logger.debug('Generating JWT token', { userId: user.id });
+    const token = jwt.sign({ userId: user.id }, JWT_SECRET!, { expiresIn: '1d' });
+    const maxAge = checked ? 24 * 3600 * 1000 * 30 : 24 * 3600 * 1000;
+
+    logger.info('Login successful', { userId: user.id });
+    res
+      .cookie('token', token, { httpOnly: false, maxAge })
+      .cookie('user', user, { httpOnly: false, maxAge })
+      .json({
+        message: 'Login successful!'
+      });
+  } catch (error) {
+    logger.error('Login error', { error });
+    next(error);
   }
+};
 
-  if (!compareSync(password, user.password)) {
-    return next(
-      new BadRequestException(
-        'Incorrect password!',
-        ErrorCode.INCORRECT_PASSWORD
-      )
-    )
-  }
-  const token = jwt.sign({ userId: user.id }, JWT_SECRET!, { expiresIn: '1d' })
+// Signup function  
+export const signup = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    // Apply rate limiting
+    await signupLimiter(req, res, () => {})
 
-  const maxAge = checked ? 24 * 3600 * 1000 * 30 : 24 * 3600 * 1000
+    logger.info('Processing signup request')
 
-  res
-    .cookie('token', token, { httpOnly: false, maxAge })
-    .json({
-      message: 'Login successful!',
-      user
+    // Validate input
+    const validatedData = signUpSchema.parse(req.body)
+
+    // Sanitize inputs
+    const { name, email, password, cPassword, gender, dob } =
+      sanitizeInput(validatedData)
+
+    // Check if user exists
+    const existingUser = await prisma.user.findFirst({
+      where: { email: email.toLowerCase() }
     })
-}
 
-export const signup = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  signUpSchema.parse(req.body)
-  console.log(req.body)
-  const { name, email, password, cPassword } = req.body
-  let user = await prisma.user.findFirst({ where: { email } })
-  if (user) {
-    return next(
-      new BadRequestException(
+    if (existingUser) {
+      logger.warn(`Signup attempt with existing email: ${email}`)
+      throw new BadRequestException(
         'User already exists!',
         ErrorCode.USER_ALREADY_EXISTS
       )
-    )
-  }
-  if (password !== cPassword) {
-    return next(
-      new BadRequestException(
-        "Password don't match!",
+    }
+
+    // Validate password match
+    if (password !== cPassword) {
+      throw new BadRequestException(
+        "Passwords don't match!",
         ErrorCode.PASSWORD_DO_NOT_MATCH
       )
-    )
-  }
-  user = await prisma.user.create({
-    data: {
-      name,
-      email,
-      password: hashSync(password, 10)
     }
-  })
-  res.json({ message: 'Created account!', user })
+
+    // Create user
+    const user = await prisma.user.create({
+      data: {
+        name,
+        email: email.toLowerCase(),
+        password: hashSync(password, 12), // Increased rounds for better security
+        dob,
+        gender,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        gender: true,
+        dob: true,
+        createdAt: true
+      }
+    })
+
+    logger.info(`User created successfully: ${user.id}`)
+
+    // Send success response
+    res.status(201).json({
+      success: true,
+      message: 'Account created successfully!',
+      data: {
+        user: {
+          id: user.id,
+          name: user.name,
+          email: user.email
+        }
+      }
+    })
+  } catch (error) {
+    logger.error('Signup error:', error)
+    next(error)
+  }
 }
+
