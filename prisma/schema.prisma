@@ -26,10 +26,7 @@ model User {
   role              Role                @default(STUDENT)
   createdAt         DateTime            @default(now())
   updatedAt         DateTime            @updatedAt
-  Post              Post[]
-  Like              Like[]
   Token             Token[]
-  Nofi              Notification[]
   emailVerification emailVerification[]
   RestPassword    RestPassword[]
 }
@@ -61,46 +58,8 @@ model Token {
   User      User     @relation(fields: [userId], references: [id])
 }
 
-model Catagoery {
-  id        String   @id @unique @default(uuid())
-  name      String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  Post      Post[]
-}
 
 model Post {
   id          String    @id @unique @default(uuid())
-  content     String
-  latitude    Float?
-  longitude   Float?
-  image       String?
-  authorId    String
-  author      User      @relation(fields: [authorId], references: [id])
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
-  Like        Like[]
-  catagoeryId String
-  Catagoery   Catagoery @relation(fields: [catagoeryId], references: [id])
-}
-
-model Like {
-  id        String   @id @unique @default(uuid())
-  postId    String
-  userId    String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  Post      Post     @relation(fields: [postId], references: [id])
-  User      User     @relation(fields: [userId], references: [id])
-}
-
-model Notification {
-  id        String   @id @unique @default(uuid())
-  userId    String
-  type      String
-  message   String
-  read      Boolean  @default(false)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  User      User     @relation(fields: [userId], references: [id])
+  
 }
