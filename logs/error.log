@@ -30,3 +30,187 @@ Invalid `prisma.post.create()` invocation in
 → 18   await prisma.post.create(
 Foreign key constraint violated: `catagoeryId` {"name":"PrismaClientKnownRequestError","code":"P2003","clientVersion":"5.21.1","meta":{"modelName":"Post","field_name":"catagoeryId"},"stack":"PrismaClientKnownRequestError: \nInvalid `prisma.post.create()` invocation in\n/home/nahid/Desktop/project/backend/src/controllers/post.ts:18:23\n\n  15   return res.status(401).json({ message: 'Unauthorized!' })\n  16 }\n  17 try {\n→ 18   await prisma.post.create(\nForeign key constraint violated: `catagoeryId`\n    at Mn.handleRequestError (/home/nahid/Desktop/project/backend/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Mn.handleAndLogRequestError (/home/nahid/Desktop/project/backend/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Mn.request (/home/nahid/Desktop/project/backend/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/home/nahid/Desktop/project/backend/node_modules/@prisma/client/runtime/library.js:130:9633)"}
 [2024-11-08 01:57:18] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:931:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:508:10)\n    at Console.log (/home/nahid/Desktop/project/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/project/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/project/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/project/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/project/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-13 11:07:34] [server] [31merror[39m: Failed to connect to the database: [1;91merror[0m: [1mError validating datasource `db`: the URL must start with the protocol `mysql://`.[0m
+  [1;94m-->[0m  [4mschema.prisma:7[0m
+[1;94m   | [0m
+[1;94m 6 | [0m  provider = "mysql"
+[1;94m 7 | [0m  url      = [1;91menv("DATABASE_URL")[0m
+[1;94m   | [0m
+
+Validation Error Count: 1 {"name":"PrismaClientInitializationError","clientVersion":"5.21.1","errorCode":"P1012","stack":"PrismaClientInitializationError: \u001b[1;91merror\u001b[0m: \u001b[1mError validating datasource `db`: the URL must start with the protocol `mysql://`.\u001b[0m\n  \u001b[1;94m-->\u001b[0m  \u001b[4mschema.prisma:7\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\u001b[1;94m 6 | \u001b[0m  provider = \"mysql\"\n\u001b[1;94m 7 | \u001b[0m  url      = \u001b[1;91menv(\"DATABASE_URL\")\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\nValidation Error Count: 1\n    at t (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:111:2488)"}
+[2024-12-13 11:17:09] [server] [31merror[39m: Failed to connect to the database: Database `my-tutor` does not exist on the database server at `localhost:5432`. {"name":"PrismaClientInitializationError","clientVersion":"5.21.1","errorCode":"P1003","stack":"PrismaClientInitializationError: Database `my-tutor` does not exist on the database server at `localhost:5432`.\n    at t (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:111:2488)"}
+[2024-12-13 11:39:59] [auth-controller] [31merror[39m: Signup error: 
+Invalid `prisma.user.findFirst()` invocation in
+/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44
+
+  83   sanitizeInput(validatedData)
+  84 
+  85 // Check if user exists
+→ 86 const existingUser = await prisma.user.findFirst(
+The table `public.User` does not exist in the current database. {"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.21.1","meta":{"modelName":"User","table":"public.User"},"stack":"PrismaClientKnownRequestError: \nInvalid `prisma.user.findFirst()` invocation in\n/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44\n\n  83   sanitizeInput(validatedData)\n  84 \n  85 // Check if user exists\n→ 86 const existingUser = await prisma.user.findFirst(\nThe table `public.User` does not exist in the current database.\n    at Mn.handleRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Mn.handleAndLogRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Mn.request (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:130:9633)"}
+[2024-12-13 11:41:11] [auth-controller] [31merror[39m: Signup error: 
+Invalid `prisma.user.findFirst()` invocation in
+/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44
+
+  83   sanitizeInput(validatedData)
+  84 
+  85 // Check if user exists
+→ 86 const existingUser = await prisma.user.findFirst(
+The table `public.User` does not exist in the current database. {"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.21.1","meta":{"modelName":"User","table":"public.User"},"stack":"PrismaClientKnownRequestError: \nInvalid `prisma.user.findFirst()` invocation in\n/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44\n\n  83   sanitizeInput(validatedData)\n  84 \n  85 // Check if user exists\n→ 86 const existingUser = await prisma.user.findFirst(\nThe table `public.User` does not exist in the current database.\n    at Mn.handleRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Mn.handleAndLogRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Mn.request (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:130:9633)"}
+[2024-12-13 11:52:25] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"invalid_type","expected":"boolean","received":"undefined","path":["checked"],"message":"Required"}],"name":"ZodError"}}
+[2024-12-13 11:54:04] [auth-controller] [31merror[39m: Login error {"error":{}}
+[2024-12-13 11:55:38] [auth-controller] [31merror[39m: Login error {"error":{}}
+[2024-12-13 11:56:21] [auth-controller] [31merror[39m: Login error {"error":{}}
+[2024-12-15 11:36:31] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cPassword"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "gender"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "dob"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["cPassword"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["gender"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["dob"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"cPassword\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"gender\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"dob\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:75:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:67:81)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-15 11:37:51] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cPassword"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "gender"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "dob"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["cPassword"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["gender"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["dob"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"cPassword\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"gender\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"dob\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:75:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:67:81)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-15 11:38:04] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cPassword"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "gender"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "dob"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["cPassword"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["gender"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["dob"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"cPassword\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"gender\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"dob\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:73:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:66:81)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-15 11:38:46] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:87:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-15 11:59:59] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:96:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-16 00:47:22] [app] [31merror[39m: Uncaught Exception: write EIO {"errno":-5,"code":"EIO","syscall":"write","stack":"Error: write EIO\n    at afterWriteDispatched (node:internal/stream_base_commons:159:15)\n    at writeGeneric (node:internal/stream_base_commons:150:3)\n    at WriteStream.Socket._writeGeneric (node:net:957:11)\n    at WriteStream.Socket._write (node:net:969:8)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at WriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)"}
+[2024-12-16 10:59:42] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["email"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["password"],"message":"Required"}],"name":"ZodError"}}
+[2024-12-16 11:00:47] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["email"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["password"],"message":"Required"}],"name":"ZodError"}}
+[2024-12-16 11:32:32] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:40:33] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:40:50] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:42:43] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:06] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:07] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:08] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:21] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:23] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:24] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:25] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:25] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:45:05] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 16:56:52] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-17 01:27:36] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-18 23:56:32] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-19 12:46:40] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-20 20:13:19] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "name"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["name"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"name\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:101:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:96:5)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-20 20:16:15] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "name"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["name"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"name\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:102:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:96:5)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-21 02:21:16] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-22 12:44:03] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:44:07] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:44:08] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:46:47] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:48:13] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:49:31] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:49:32] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 13:11:24] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-22 13:22:19] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:07] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:11] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:14] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:54] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:57] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:59] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:33:00] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 14:31:18] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-22 15:56:59] [auth-controller] [31merror[39m: Forgot password error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 15:59:25] [auth-controller] [31merror[39m: Forgot password error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 16:27:39] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-01 11:49:52] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}

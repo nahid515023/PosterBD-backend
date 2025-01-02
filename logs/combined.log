@@ -312,3 +312,782 @@ Foreign key constraint violated: `catagoeryId` {"name":"PrismaClientKnownRequest
 [2024-11-12 02:02:36] [post-controller] [32minfo[39m: Fetching posts {"page":1,"limit":10,"sort":"desc"}
 [2024-11-12 02:02:40] [post-controller] [32minfo[39m: Fetching posts {"page":1,"limit":10,"sort":"desc"}
 [2024-11-12 02:03:35] [server] [32minfo[39m: App listening at port 3001
+[2024-12-13 11:07:34] [server] [31merror[39m: Failed to connect to the database: [1;91merror[0m: [1mError validating datasource `db`: the URL must start with the protocol `mysql://`.[0m
+  [1;94m-->[0m  [4mschema.prisma:7[0m
+[1;94m   | [0m
+[1;94m 6 | [0m  provider = "mysql"
+[1;94m 7 | [0m  url      = [1;91menv("DATABASE_URL")[0m
+[1;94m   | [0m
+
+Validation Error Count: 1 {"name":"PrismaClientInitializationError","clientVersion":"5.21.1","errorCode":"P1012","stack":"PrismaClientInitializationError: \u001b[1;91merror\u001b[0m: \u001b[1mError validating datasource `db`: the URL must start with the protocol `mysql://`.\u001b[0m\n  \u001b[1;94m-->\u001b[0m  \u001b[4mschema.prisma:7\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\u001b[1;94m 6 | \u001b[0m  provider = \"mysql\"\n\u001b[1;94m 7 | \u001b[0m  url      = \u001b[1;91menv(\"DATABASE_URL\")\u001b[0m\n\u001b[1;94m   | \u001b[0m\n\nValidation Error Count: 1\n    at t (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:111:2488)"}
+[2024-12-13 11:11:12] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:17:09] [server] [31merror[39m: Failed to connect to the database: Database `my-tutor` does not exist on the database server at `localhost:5432`. {"name":"PrismaClientInitializationError","clientVersion":"5.21.1","errorCode":"P1003","stack":"PrismaClientInitializationError: Database `my-tutor` does not exist on the database server at `localhost:5432`.\n    at t (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:111:2488)"}
+[2024-12-13 11:18:16] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:39:59] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-13 11:39:59] [auth-controller] [31merror[39m: Signup error: 
+Invalid `prisma.user.findFirst()` invocation in
+/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44
+
+  83   sanitizeInput(validatedData)
+  84 
+  85 // Check if user exists
+→ 86 const existingUser = await prisma.user.findFirst(
+The table `public.User` does not exist in the current database. {"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.21.1","meta":{"modelName":"User","table":"public.User"},"stack":"PrismaClientKnownRequestError: \nInvalid `prisma.user.findFirst()` invocation in\n/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44\n\n  83   sanitizeInput(validatedData)\n  84 \n  85 // Check if user exists\n→ 86 const existingUser = await prisma.user.findFirst(\nThe table `public.User` does not exist in the current database.\n    at Mn.handleRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Mn.handleAndLogRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Mn.request (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:130:9633)"}
+[2024-12-13 11:40:32] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:41:08] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:41:11] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-13 11:41:11] [auth-controller] [31merror[39m: Signup error: 
+Invalid `prisma.user.findFirst()` invocation in
+/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44
+
+  83   sanitizeInput(validatedData)
+  84 
+  85 // Check if user exists
+→ 86 const existingUser = await prisma.user.findFirst(
+The table `public.User` does not exist in the current database. {"name":"PrismaClientKnownRequestError","code":"P2021","clientVersion":"5.21.1","meta":{"modelName":"User","table":"public.User"},"stack":"PrismaClientKnownRequestError: \nInvalid `prisma.user.findFirst()` invocation in\n/home/nahid/Desktop/app project/myTutor-backend/src/controllers/auth.ts:86:44\n\n  83   sanitizeInput(validatedData)\n  84 \n  85 // Check if user exists\n→ 86 const existingUser = await prisma.user.findFirst(\nThe table `public.User` does not exist in the current database.\n    at Mn.handleRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Mn.handleAndLogRequestError (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Mn.request (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/home/nahid/Desktop/app project/myTutor-backend/node_modules/@prisma/client/runtime/library.js:130:9633)"}
+[2024-12-13 11:41:59] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:42:03] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-13 11:42:03] [auth-controller] [32minfo[39m: User created successfully: e88baa96-a18d-4e51-9e5e-79ef3794e079
+[2024-12-13 11:49:52] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:52:10] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:52:19] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:52:25] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid12@gmail.com"}
+[2024-12-13 11:52:25] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"invalid_type","expected":"boolean","received":"undefined","path":["checked"],"message":"Required"}],"name":"ZodError"}}
+[2024-12-13 11:53:31] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:53:56] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:54:04] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid12@gmail.com"}
+[2024-12-13 11:54:04] [auth-controller] [31merror[39m: Login error {"error":{}}
+[2024-12-13 11:55:38] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid12@gmail.com"}
+[2024-12-13 11:55:38] [auth-controller] [31merror[39m: Login error {"error":{}}
+[2024-12-13 11:56:13] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-13 11:56:13] [auth-controller] [32minfo[39m: User created successfully: 46252ca8-f2a3-475d-9fa5-6785e63d757b
+[2024-12-13 11:56:21] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid@gmail.com"}
+[2024-12-13 11:56:21] [auth-controller] [31merror[39m: Login error {"error":{}}
+[2024-12-13 11:57:46] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:57:53] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:57:54] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid@gmail.com"}
+[2024-12-13 11:57:54] [auth-controller] [32minfo[39m: Login successful {"userId":"46252ca8-f2a3-475d-9fa5-6785e63d757b"}
+[2024-12-13 11:58:13] [server] [32minfo[39m: App listening at port 3000
+[2024-12-13 11:58:13] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid@gmail.com"}
+[2024-12-13 11:58:13] [auth-controller] [32minfo[39m: Login successful {"userId":"46252ca8-f2a3-475d-9fa5-6785e63d757b"}
+[2024-12-15 11:27:58] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:33:41] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:36:31] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:36:31] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cPassword"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "gender"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "dob"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["cPassword"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["gender"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["dob"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"cPassword\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"gender\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"dob\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:75:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:67:81)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-15 11:37:51] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:37:51] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cPassword"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "gender"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "dob"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["cPassword"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["gender"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["dob"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"cPassword\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"gender\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"dob\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:75:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:67:81)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-15 11:38:03] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:38:04] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:38:04] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "cPassword"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "gender"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "dob"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["cPassword"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["gender"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["dob"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"cPassword\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"gender\"\n    ],\n    \"message\": \"Required\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"dob\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:73:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:66:81)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-15 11:38:43] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:38:46] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:38:46] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid@gmail.com
+[2024-12-15 11:38:46] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:87:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-15 11:39:00] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:39:00] [auth-controller] [32minfo[39m: User created successfully: 9ffa7ba3-66f2-48e0-9b9a-6301fca1bf55
+[2024-12-15 11:40:02] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid@gmail.com"}
+[2024-12-15 11:40:02] [auth-controller] [32minfo[39m: Login successful {"userId":"46252ca8-f2a3-475d-9fa5-6785e63d757b"}
+[2024-12-15 11:40:49] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:40:55] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:40:59] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:44:29] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:46:36] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:46:41] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 11:56:07] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:56:08] [auth-controller] [32minfo[39m: User created successfully: 2f1131df-52d1-4b55-a595-1de028c2dca9
+[2024-12-15 11:59:59] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 11:59:59] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid12@gmail.com
+[2024-12-15 11:59:59] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:96:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-15 12:00:13] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 12:00:14] [auth-controller] [32minfo[39m: User created successfully: 973743fd-9122-468e-a1f9-f22b33d69b7a
+[2024-12-15 12:00:22] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:00:29] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 12:00:29] [auth-controller] [32minfo[39m: User created successfully: a84c26d3-4cee-428c-8070-c72701305528
+[2024-12-15 12:00:42] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 12:00:42] [auth-controller] [32minfo[39m: User created successfully: 3e194755-321b-4002-b13b-83629bd3f30e
+[2024-12-15 12:01:48] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 12:01:48] [auth-controller] [32minfo[39m: User created successfully: 29c14562-498d-4b30-92f4-40e3adbd7fbc
+[2024-12-15 12:04:18] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:07:34] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:34:46] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:35:03] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 12:35:03] [auth-controller] [32minfo[39m: User created successfully: 94d312d7-7837-4dfa-8983-fbfa980aaa28
+[2024-12-15 12:35:03] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-15 12:52:07] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:53:43] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:57:00] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 12:57:05] [auth-controller] [32minfo[39m: Processing email verification request
+[2024-12-15 12:57:05] [auth-controller] [32minfo[39m: Email verified successfully
+[2024-12-15 13:03:59] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:04:57] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:05:10] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:12:47] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:14:56] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:15:34] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 13:15:34] [auth-controller] [32minfo[39m: User created successfully: 7e16112c-aabb-41dc-aacf-d20f116fb9a3
+[2024-12-15 13:15:34] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-15 13:16:40] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:18:33] [server] [32minfo[39m: App listening at port 3001
+[2024-12-15 13:19:36] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 13:19:37] [auth-controller] [32minfo[39m: User created successfully: 5403c201-6a62-4889-ba92-dd8f23d53b2a
+[2024-12-15 13:19:37] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-15 13:22:27] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-15 13:22:27] [auth-controller] [32minfo[39m: User created successfully: b3770eae-93c1-4f51-8bd4-88232a22e4aa
+[2024-12-15 13:22:27] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-15 13:23:23] [auth-controller] [32minfo[39m: Processing email verification request
+[2024-12-15 13:23:23] [auth-controller] [32minfo[39m: Email verified successfully
+[2024-12-15 13:23:23] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 00:00:09] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 00:01:49] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 00:07:42] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 00:47:17] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 00:47:22] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 00:47:22] [app] [31merror[39m: Uncaught Exception: write EIO {"errno":-5,"code":"EIO","syscall":"write","stack":"Error: write EIO\n    at afterWriteDispatched (node:internal/stream_base_commons:159:15)\n    at writeGeneric (node:internal/stream_base_commons:150:3)\n    at WriteStream.Socket._writeGeneric (node:net:957:11)\n    at WriteStream.Socket._write (node:net:969:8)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at WriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)"}
+[2024-12-16 10:29:03] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 10:58:16] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 10:59:42] [auth-controller] [32minfo[39m: Processing login request {}
+[2024-12-16 10:59:42] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["email"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["password"],"message":"Required"}],"name":"ZodError"}}
+[2024-12-16 11:00:44] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 11:00:47] [auth-controller] [32minfo[39m: Processing login request {}
+[2024-12-16 11:00:47] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["email"],"message":"Required"},{"code":"invalid_type","expected":"string","received":"undefined","path":["password"],"message":"Required"}],"name":"ZodError"}}
+[2024-12-16 11:02:07] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 11:02:10] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:02:10] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 11:04:41] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:04:41] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 11:04:59] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:04:59] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:05:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:05:34] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:07:30] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:07:30] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:08:30] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:08:30] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:09:56] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:09:56] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:11:45] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:11:45] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:17:03] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 11:20:08] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:20:08] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:24:06] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:24:06] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:24:26] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:24:26] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:30:45] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:30:46] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:30:49] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:30:50] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:32:23] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:32:23] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:32:26] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:32:26] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:32:32] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 11:32:32] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 11:33:07] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:33:08] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:33:11] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:33:11] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:34:51] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:34:51] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:34:53] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:34:54] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:41:12] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:41:12] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:44:46] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:44:46] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 11:44:49] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 11:44:49] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:21:52] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:21:52] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:21:54] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:21:54] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:22:11] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:22:11] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:27:26] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:27:26] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:27:39] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:27:39] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:30:26] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:30:26] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:30:27] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:30:27] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:30:29] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:30:29] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:30:36] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:30:36] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:31:17] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:31:17] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:31:41] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:31:41] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:32:41] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:32:41] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:32:43] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:32:43] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:35:14] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:35:14] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 13:35:39] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:35:39] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:35:43] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:35:43] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:02] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:02] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:08] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:08] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:18] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:18] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-16 13:36:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:36:34] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:37:00] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:37:00] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:37:06] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:37:06] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:37:11] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:37:11] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"nahid5150233@gmail.com"}
+[2024-12-16 13:40:33] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:40:33] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:40:50] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:40:50] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:42:43] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:42:43] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:43:49] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:43:55] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:44:06] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:06] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:07] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:07] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:08] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:08] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:21] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:21] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:23] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:23] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:24] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:24] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:25] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:25] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:25] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:25] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:44:32] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:44:41] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:44:41] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:45:05] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:45:05] [auth-controller] [31merror[39m: Login error {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:46:49] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:46:54] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:46:54] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:49:53] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:49:54] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:49:54] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:52:09] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:52:11] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:52:11] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:52:17] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:52:17] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:53:21] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:53:21] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:53:30] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:53:34] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:53:34] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 13:57:25] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 13:57:32] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 13:57:32] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 14:00:28] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 14:00:30] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 14:00:30] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 14:00:43] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 14:00:43] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 15:43:26] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:43:26] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 15:44:22] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:44:22] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 15:45:49] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:45:50] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 15:46:09] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:46:09] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 15:46:53] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:46:53] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 15:50:30] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:50:31] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 15:51:15] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 15:51:15] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:00:56] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 16:00:57] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:03:46] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 16:03:47] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:06:37] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-16 16:06:37] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:17:54] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:17:54] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"n@gmail.com"}
+[2024-12-16 16:18:36] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:18:36] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:27:00] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:27:00] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:36:49] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:36:49] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:36:53] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:36:53] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:38:01] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:38:01] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:38:06] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:38:06] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:38:10] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:38:10] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:38:11] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:38:12] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:38:12] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:38:12] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:38:19] [auth-controller] [32minfo[39m: Processing login request {"email":"b190305020@cse.jnu.ac.bd"}
+[2024-12-16 16:38:19] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 16:38:51] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:38:51] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:39:20] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:39:20] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:39:22] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:39:22] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:45:15] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:45:16] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:45:19] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:45:19] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:47:44] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 16:47:45] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 16:56:52] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 16:56:52] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-16 23:33:16] [server] [32minfo[39m: App listening at port 3001
+[2024-12-16 23:33:58] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:33:58] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 23:36:56] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:36:57] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 23:39:12] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:39:12] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 23:40:29] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:40:29] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 23:44:28] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:44:28] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 23:44:36] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:44:36] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 23:48:41] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:48:41] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-16 23:50:19] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:50:19] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-16 23:50:25] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-16 23:50:26] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 00:06:59] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 00:06:59] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 00:13:44] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 00:13:44] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 01:27:35] [server] [32minfo[39m: App listening at port 3001
+[2024-12-17 01:27:36] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-17 14:03:11] [server] [32minfo[39m: App listening at port 3001
+[2024-12-17 14:04:10] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:04:10] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:06:50] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:06:51] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:07:46] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:07:46] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:10:02] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:10:02] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:11:20] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:11:20] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:17:33] [auth-controller] [32minfo[39m: Processing login request {"email":"m@gmail.com"}
+[2024-12-17 14:17:33] [auth-controller] [33mwarn[39m: Login failed - user not found {"email":"m@gmail.com"}
+[2024-12-17 14:17:43] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:17:43] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:29:37] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:29:37] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 14:31:30] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 14:31:30] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-17 23:45:23] [server] [32minfo[39m: App listening at port 3001
+[2024-12-17 23:45:59] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-17 23:45:59] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:00:31] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:00:31] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:01:44] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:01:44] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:12:27] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:12:28] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:17:41] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:17:41] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:19:20] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:19:20] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:21:13] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:21:13] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 00:25:37] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 00:25:37] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 11:22:06] [server] [32minfo[39m: App listening at port 3001
+[2024-12-18 11:31:31] [auth-controller] [32minfo[39m: Processing login request {"email":"n@gmail.com"}
+[2024-12-18 11:31:31] [auth-controller] [32minfo[39m: Login successful {"userId":"b3770eae-93c1-4f51-8bd4-88232a22e4aa"}
+[2024-12-18 23:56:32] [server] [32minfo[39m: App listening at port 3001
+[2024-12-18 23:56:32] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-19 10:04:22] [server] [32minfo[39m: App listening at port 3001
+[2024-12-19 12:19:41] [server] [32minfo[39m: App listening at port 3001
+[2024-12-19 12:46:40] [server] [32minfo[39m: App listening at port 3001
+[2024-12-19 12:46:40] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-20 17:25:21] [server] [32minfo[39m: App listening at port 3001
+[2024-12-20 20:04:46] [server] [32minfo[39m: App listening at port 3001
+[2024-12-20 20:13:19] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-20 20:13:19] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "name"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["name"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"name\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:101:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:96:5)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-20 20:16:12] [server] [32minfo[39m: App listening at port 3001
+[2024-12-20 20:16:15] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-20 20:16:15] [auth-controller] [31merror[39m: Signup error: [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "name"
+    ],
+    "message": "Required"
+  }
+] {"issues":[{"code":"invalid_type","expected":"string","received":"undefined","path":["name"],"message":"Required"}],"name":"ZodError","stack":"ZodError: [\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"string\",\n    \"received\": \"undefined\",\n    \"path\": [\n      \"name\"\n    ],\n    \"message\": \"Required\"\n  }\n]\n    at Object.get error [as error] (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:55:31)\n    at ZodObject.parse (/home/nahid/Desktop/myTutor/backend/node_modules/zod/lib/types.js:160:22)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:102:40\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:27:12)\n    at signup (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:96:5)\n    at /home/nahid/Desktop/myTutor/backend/src/error-hander.ts:10:13\n    at Generator.next (<anonymous>)"}
+[2024-12-20 20:16:42] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-20 20:16:43] [auth-controller] [32minfo[39m: User created successfully: b905fd81-9beb-4cc4-a210-e74803f318d3
+[2024-12-20 20:16:43] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-20 20:20:47] [server] [32minfo[39m: App listening at port 3001
+[2024-12-20 20:24:48] [server] [32minfo[39m: App listening at port 3001
+[2024-12-20 20:26:12] [auth-controller] [32minfo[39m: Processing email verification request
+[2024-12-20 20:26:12] [auth-controller] [32minfo[39m: Email verified successfully
+[2024-12-20 20:26:12] [auth-controller] [32minfo[39m: Login successful {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-20 21:21:56] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-20 21:21:56] [auth-controller] [32minfo[39m: Login successful {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-20 21:23:59] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-20 21:23:59] [auth-controller] [32minfo[39m: Login successful {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-20 21:25:31] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-20 21:25:31] [auth-controller] [32minfo[39m: Login successful {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-20 21:28:16] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-20 21:28:16] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-20 21:28:27] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-20 21:28:27] [auth-controller] [32minfo[39m: Login successful {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 00:12:19] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 00:49:15] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 00:49:16] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 00:53:13] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 00:58:10] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 00:58:10] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 00:59:35] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 00:59:35] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 01:01:09] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 01:01:09] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 01:02:51] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 01:02:51] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 01:28:07] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 01:28:15] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 01:28:52] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 01:28:52] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 01:41:58] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 01:44:08] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 01:45:55] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 01:52:13] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 01:53:29] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 01:53:29] [auth-controller] [32minfo[39m: Password reset successfully {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 01:55:44] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 01:55:44] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 01:57:50] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 01:57:50] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 02:10:58] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 02:10:58] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 02:21:16] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 02:21:16] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-21 13:00:21] [server] [32minfo[39m: App listening at port 3001
+[2024-12-21 13:06:29] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:06:29] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:09:14] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:09:14] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:20:45] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:20:45] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:21:31] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:21:31] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:21:51] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:21:51] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:24:51] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:24:51] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:27:42] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:27:42] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:29:46] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:29:46] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:30:38] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:30:38] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:37:53] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:37:53] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"716174","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:47:44] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 13:47:44] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 13:48:34] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"710803","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:48:34] [auth-controller] [32minfo[39m: Password reset successfully {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:50:08] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"710803","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:50:08] [auth-controller] [33mwarn[39m: Reset password failed - invalid token {"ResetToken":"710803","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:50:19] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 13:50:19] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 13:50:43] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"972866","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:50:43] [auth-controller] [32minfo[39m: Password reset successfully {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:53:30] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-21 13:53:31] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-21 13:54:11] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"502281","userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:54:11] [auth-controller] [32minfo[39m: Password reset successfully {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 13:54:45] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-21 13:54:46] [auth-controller] [32minfo[39m: Login successful {"userId":"b905fd81-9beb-4cc4-a210-e74803f318d3"}
+[2024-12-21 14:51:38] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-21 14:51:38] [auth-controller] [32minfo[39m: User created successfully: afa430da-93ce-4154-8b49-4626d3f25c7a
+[2024-12-21 14:51:38] [auth-controller] [32minfo[39m: Verification email sent to: nahid253632@gmail.com
+[2024-12-21 14:52:31] [auth-controller] [32minfo[39m: Processing email verification request
+[2024-12-21 14:52:31] [auth-controller] [32minfo[39m: Email verified successfully
+[2024-12-21 14:52:31] [auth-controller] [32minfo[39m: Login successful {"userId":"afa430da-93ce-4154-8b49-4626d3f25c7a"}
+[2024-12-21 22:43:41] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 12:43:09] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 12:44:03] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:44:03] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:44:07] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:44:07] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:44:08] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:44:08] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:46:47] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:46:47] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:48:13] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:48:13] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:49:31] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:49:31] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:49:32] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 12:49:32] [auth-controller] [31merror[39m: Login error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 12:50:00] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 12:50:00] [auth-controller] [32minfo[39m: User created successfully: 29c4d933-a24a-4abb-8e4d-33028b311a46
+[2024-12-22 12:50:00] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-22 12:51:06] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 12:53:01] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 12:53:01] [auth-controller] [32minfo[39m: User created successfully: 48da8dbe-283a-49c4-b74e-a334152b9400
+[2024-12-22 12:53:01] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-22 12:57:31] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 12:58:40] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 12:58:40] [auth-controller] [32minfo[39m: User created successfully: 48aa94fd-86f0-4389-a039-5c8dd7427686
+[2024-12-22 12:58:40] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-22 13:00:01] [auth-controller] [32minfo[39m: Processing email verification request
+[2024-12-22 13:00:01] [auth-controller] [32minfo[39m: Email verified successfully
+[2024-12-22 13:00:01] [auth-controller] [32minfo[39m: Login successful {"userId":"48aa94fd-86f0-4389-a039-5c8dd7427686"}
+[2024-12-22 13:03:53] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:03:53] [auth-controller] [32minfo[39m: Login successful {"userId":"48aa94fd-86f0-4389-a039-5c8dd7427686"}
+[2024-12-22 13:11:24] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 13:11:24] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-22 13:21:33] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 13:22:19] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:22:19] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:22:19] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:30:05] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:30:06] [auth-controller] [32minfo[39m: User created successfully: 70477877-f540-4484-a634-c5b5e0ffd660
+[2024-12-22 13:30:06] [auth-controller] [32minfo[39m: Verification email sent to: nahid515023@gmail.com
+[2024-12-22 13:30:46] [auth-controller] [32minfo[39m: Processing email verification request
+[2024-12-22 13:30:46] [auth-controller] [32minfo[39m: Email verified successfully
+[2024-12-22 13:30:46] [auth-controller] [32minfo[39m: Login successful {"userId":"70477877-f540-4484-a634-c5b5e0ffd660"}
+[2024-12-22 13:32:07] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:32:07] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:32:07] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:11] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:32:11] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:32:11] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:14] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:32:14] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:32:14] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:54] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:32:54] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:32:54] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:57] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:32:57] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:32:57] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:32:59] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:32:59] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:32:59] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:33:00] [auth-controller] [32minfo[39m: Processing signup request
+[2024-12-22 13:33:00] [auth-controller] [33mwarn[39m: Signup attempt with existing email: nahid515023@gmail.com
+[2024-12-22 13:33:00] [auth-controller] [31merror[39m: Signup error: User already exists! {"errorCode":1002,"statusCode":400,"errors":null,"stack":"Error: User already exists!\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:114:13\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/nahid/Desktop/myTutor/backend/src/controllers/auth.ts:28:58)"}
+[2024-12-22 13:33:38] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:33:38] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:33:56] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:33:56] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:34:09] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:34:09] [auth-controller] [32minfo[39m: Login successful {"userId":"70477877-f540-4484-a634-c5b5e0ffd660"}
+[2024-12-22 13:36:18] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:18] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:30] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:30] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:32] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:32] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:33] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:33] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:44] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:44] [auth-controller] [32minfo[39m: Login successful {"userId":"48aa94fd-86f0-4389-a039-5c8dd7427686"}
+[2024-12-22 13:36:57] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:36:57] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:37:06] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:37:06] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:39:50] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:39:50] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2024-12-22 13:40:59] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 13:40:59] [auth-controller] [32minfo[39m: Login successful {"userId":"70477877-f540-4484-a634-c5b5e0ffd660"}
+[2024-12-22 14:18:33] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 14:31:18] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 14:31:18] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2024-12-22 15:52:04] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 15:56:59] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com","Role":{"params":{"role":"TEACHER"},"searchParams":{}}}
+[2024-12-22 15:56:59] [auth-controller] [31merror[39m: Forgot password error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 15:59:25] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com","Role":{"role":"TEACHER"}}
+[2024-12-22 15:59:25] [auth-controller] [31merror[39m: Forgot password error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
+[2024-12-22 16:00:14] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:00:14] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-22 16:03:13] [auth-controller] [32minfo[39m: Processing forgot password request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:03:13] [auth-controller] [32minfo[39m: Password reset email sent to: nahid515023@gmail.com
+[2024-12-22 16:04:01] [auth-controller] [32minfo[39m: Processing reset password request {"ResetToken":"266122","userId":"48aa94fd-86f0-4389-a039-5c8dd7427686"}
+[2024-12-22 16:04:02] [auth-controller] [32minfo[39m: Password reset successfully {"userId":"48aa94fd-86f0-4389-a039-5c8dd7427686"}
+[2024-12-22 16:04:19] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:19] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:31] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:31] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:32] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:32] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:32] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:32] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:32] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:32] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:33] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:33] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:33] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:33] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:33] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:33] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:34] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:35] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:35] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:36] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:37] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:37] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:37] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:39] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:40] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:44] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:04:45] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:05:05] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2024-12-22 16:05:05] [auth-controller] [32minfo[39m: Login successful {"userId":"70477877-f540-4484-a634-c5b5e0ffd660"}
+[2024-12-22 16:27:39] [server] [32minfo[39m: App listening at port 3001
+[2024-12-22 16:27:39] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-01 11:33:22] [server] [32minfo[39m: App listening at port 3001
+[2025-01-01 11:34:49] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:34:50] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:16] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:16] [auth-controller] [33mwarn[39m: Login failed - invalid input {"error":{"issues":[{"code":"too_small","minimum":8,"type":"string","inclusive":true,"exact":false,"message":"String must contain at least 8 character(s)","path":["password"]}],"name":"ZodError"}}
+[2025-01-01 11:35:19] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:20] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:28] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:28] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:39] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:40] [auth-controller] [33mwarn[39m: Login failed - incorrect password {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:52] [auth-controller] [32minfo[39m: Processing login request {"email":"nahid515023@gmail.com"}
+[2025-01-01 11:35:52] [auth-controller] [32minfo[39m: Login successful {"userId":"48aa94fd-86f0-4389-a039-5c8dd7427686"}
+[2025-01-01 11:49:52] [server] [32minfo[39m: App listening at port 3001
+[2025-01-01 11:49:52] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
