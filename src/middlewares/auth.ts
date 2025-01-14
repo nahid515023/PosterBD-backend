@@ -29,10 +29,8 @@ export async function authMiddleware(
   res: Response,
   next: NextFunction
 ) {
-  const authHeader = req.cookies.Authorization
-  logger.debug(`Authorization header: ${authHeader}`)
-  
-  const token = authHeader?.split(' ')[1]
+
+  const token = req.cookies['token']
   logger.debug(`Extracted token: ${token}`)
 
   if (!token) {

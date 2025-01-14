@@ -18,8 +18,10 @@ model User {
   name              String
   email             String
   password          String
-  dob               String
-  gender            String
+  Class             String?
+  school            String?
+  dob               String?
+  gender            String?
   image             String?
   verified          Boolean             @default(false)
   about             String?
@@ -28,7 +30,11 @@ model User {
   updatedAt         DateTime            @updatedAt
   Token             Token[]
   emailVerification emailVerification[]
-  RestPassword    RestPassword[]
+  RestPassword      RestPassword[]
+  Post              Post[]
+  TutorRequest      TutorRequest[]
+  ConnectedAccounts ConnectedAccount[]  @relation("ConnectedAccountUser")
+  ConnectedAccount  ConnectedAccount[]
 }
 
 model RestPassword {
@@ -37,7 +43,7 @@ model RestPassword {
   token     String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  User      User     @relation(fields: [userId], references: [id])
+  User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model emailVerification {
@@ -46,7 +52,7 @@ model emailVerification {
   token     String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  User      User     @relation(fields: [userId], references: [id])
+  User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Token {
@@ -55,11 +61,50 @@ model Token {
   token     String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  User      User     @relation(fields: [userId], references: [id])
+  User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
-
 model Post {
-  id          String    @id @unique @default(uuid())
-  
+  id           String         @id @unique @default(uuid())
+  medium       String
+  Class        String
+  subject      String
+  fees         String
+  description  String
+  booked       Boolean        @default(false)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  userId       String
+  User         User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  TutorRequest TutorRequest[]
+}
+
+model TutorRequest {
+  id        String   @id @unique @default(uuid())
+  userId    String
+  postId    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+}
+
+model ConnectedAccount {
+  id            String   @id @unique @default(uuid())
+  userId        String
+  contactUserId String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  User          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ContactUser   User     @relation("ConnectedAccountUser", fields: [contactUserId], references: [id], onDelete: Cascade)
+  connected     Chat[]
+}
+
+model Chat {
+  id          String           @id @unique @default(uuid())
+  connectedId String
+  message     String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  connected   ConnectedAccount @relation(fields: [connectedId], references: [id], onDelete: Cascade)
 }

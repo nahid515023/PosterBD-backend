@@ -1,17 +1,16 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express'
 import { prisma } from '..'
-import { createLogger } from '../services/logger';
-import redis from '../services/cache';
+import { createLogger } from '../services/logger'
+import redis from '../services/cache'
 
-
-const logger = createLogger('post-controller');
-const CACHE_TTL = 3600; // 1 hour
+const logger = createLogger('post-controller')
+const CACHE_TTL = 3600 // 1 hour
 
 interface QueryParams {
-  page?: number;
-  limit?: number;
-  sort?: 'asc' | 'desc';
-  category?: string;
+  page?: number
+  limit?: number
+  sort?: 'asc' | 'desc'
+  category?: string
 }
 
 export const getPosts = async (
@@ -20,131 +19,79 @@ export const getPosts = async (
   next: NextFunction
 ) => {
   try {
-    const { 
-      page = 1, 
-      limit = 10, 
-      sort = 'desc',
-      category 
-    } = req.query;
-
-    logger.info('Fetching posts', { page, limit, sort, category });
-
-    // Try cache first
-    const cacheKey = `posts:${page}:${limit}:${sort}:${category || 'all'}`;
-    const cached = await redis.get(cacheKey);
-    
-    if (cached) {
-      logger.debug('Returning cached posts');
-      return res.status(200).json(JSON.parse(cached));
+    const posts = await prisma.post.findMany({
+      include: {
+        User: true,
+        TutorRequest: true
+      }
+    })
+    if (!posts) {
+      logger.error('Fetching posts failed')
+      return res.status(404).json({ message: 'Fetching posts failed' })
     }
 
-    const skip = (page - 1) * limit;
-    
-    const [posts, total] = await Promise.all([
-      prisma.post.findMany({
-        where: category ? {
-          catagoeryId: category
-        } : undefined,
-        include: {
-          author: {
-            select: {
-              id: true,
-              name: true,
-              email: true
-            }
-          },
-          Catagoery: true,
-          Like: {
-            select: {
-              userId: true
-            }
-          }
-        },
-        orderBy: {
-          createdAt: sort
-        },
-        skip,
-        take: limit
-      }),
-      prisma.post.count({
-        where: category ? {
-          catagoeryId: category
-        } : undefined
-      })
-    ]);
-
-    const response = {
-      posts,
-      pagination: {
-        total,
-        pages: Math.ceil(total / limit),
-        page,
-        limit
-      },
-      message: 'Posts fetched successfully!'
-    };
-
-    // Cache response
-    await redis.set(cacheKey, JSON.stringify(response), 'EX', CACHE_TTL);
-    
-    logger.info('Posts fetched successfully', { count: posts.length });
-    res.status(200).json(response);
+    logger.info('Fetching posts successful')
+    console.log(posts)
+    res.status(200).json({ posts: posts })
   } catch (error) {
-    logger.error('Error fetching posts:', error);
-    next(error);
+    logger.error('Error fetching posts:', error)
+    next(error)
   }
-};
+}
 
 export const createPost = async (req: Request, res: Response) => {
-  const { content, latitude, longitude, catagoeryId } = req.body
+  const { medium, selectedClass, subject, fees, description } = req.body
   const userId = req.user?.id
+  
+  if(req.user?.role === 'TEACHER') {
+    return res.status(400).json({ message: 'Only student can create post!' })
+  }
 
   try {
+    console.log('Create post:', req.body)
     await prisma.post.create({
       data: {
-        content,
-        latitude,
-        longitude,
-        catagoeryId,
-        authorId: userId
+        medium,
+        Class: selectedClass,
+        subject,
+        fees,
+        description,
+        userId
       }
     })
 
-    const posts = await prisma.post.findMany({
-      where: {
-        authorId: userId
-      }
-    })
-    await redis.del(`userAllPost:${userId}`)
-    await redis.set(`userAllPost:${userId}`, JSON.stringify(posts), 'EX', 3600)
     logger.info('Create post successfuly!')
-    res.status(200).json({ posts: posts, message: 'Create post successfuly!' })
+    res.status(200).json({ message: 'Create post successfuly!' })
   } catch (err) {
     logger.error('Create post failed:', err)
+    console.log(err)
     res.status(400).json({ message: 'Create post failed!' })
   }
 }
 
 export const updatePost = async (req: Request, res: Response) => {
   const { id } = req.params
+  const { medium, Class, subject, fees, description } = req.body
   const userId = req.user?.id
-  const { content, latitude, longitude, catagoeryId } = req.body
+
   try {
     await prisma.post.update({
       where: {
         id
       },
       data: {
-        content,
-        latitude,
-        longitude,
-        catagoeryId
+        medium,
+        Class,
+        subject,
+        fees,
+        description,
+        userId
       }
     })
 
     const posts = await prisma.post.findMany({
       where: {
-        authorId: userId
+        userId
       }
     })
 
@@ -169,7 +116,7 @@ export const deletePost = async (req: Request, res: Response) => {
 
     const posts = await prisma.post.findMany({
       where: {
-        authorId: userId
+        userId
       }
     })
     await redis.del(`userAllPost:${userId}`)
@@ -180,49 +127,147 @@ export const deletePost = async (req: Request, res: Response) => {
   }
 }
 
-export const getLikePost = async (req: Request, res: Response) => {
-  const { id } = req.params
-  const cacheLike = await redis.get(`PostLike:${id}`)
-  if (cacheLike) {
-    res.json({ message: 'Get like post success!', like: JSON.parse(cacheLike) })
-  }
-
+export const getPostById = async (req: Request, res: Response) => {
   try {
-    await prisma.like.findMany({
+    const { id } = req.params
+    const interested = await prisma.tutorRequest.findFirst({
       where: {
-        postId: id
+        postId: id,
+        userId: req.user?.id
       }
     })
-    await redis.set(`PostLike:${id}`, JSON.stringify(cacheLike), 'EX', 3600)
-    res.status(200).json({ message: 'Like post success!' })
+    const posts = await prisma.post.findFirst({
+      where: {
+        id
+      },
+      include: {
+        User: true,
+        TutorRequest: true
+      }
+    })
+    res.status(200).json({ post: posts, interested: interested ? true : false })
   } catch (err) {
-    res.status(400).json({ message: 'Like post failed!' })
+    res.status(400).json({ message: 'Post dose not found!' })
   }
 }
 
-export const likePost = async (req: Request, res: Response) => {
-  const { id } = req.params
-  const userId = req.user?.id
+export const getTutorRequest = async (req: Request, res: Response) => {
+  const { postId } = req.params
+  // if (req.user?.role !== 'STUDENT') {
+  //   return res.status(400).json({ message: 'Only teacher can request tutor!' })
+  // }
+
   try {
-    await prisma.like.create({
+    const date = await prisma.tutorRequest.findMany({
+      where: {
+        postId
+      },
+      include: {
+        User: true
+      }
+    })
+    console.log(date)
+    res.status(200).json({ allRequest: date })
+  } catch (err) {
+    res.status(400).json({ message: 'Request tutor failed!' })
+  }
+}
+
+export const createTutorRequest = async (req: Request, res: Response) => {
+  const userId = req.user?.id
+  const { postId } = req.params
+
+  if (req.user?.role !== 'TEACHER') {
+    return res.status(400).json({ message: 'Only teacher can request tutor!' })
+  }
+
+  console.log('Interests', userId, postId)
+
+  try {
+    await prisma.tutorRequest.create({
       data: {
-        postId: id,
+        postId,
         userId
       }
     })
-
-    const likes = await prisma.like.findMany({
-      where: {
-        postId: id
-      }
-    })
-    await redis.set(`PostLike:${id}`, JSON.stringify(likes), 'EX', 3600)
-
-    res.status(200).json({ message: 'Like post success!' })
+    res.status(200).json({ message: 'Request tutor success!' })
   } catch (err) {
-    res.status(400).json({ message: 'Like post failed!' })
+    res.status(400).json({ message: 'Request tutor failed!' })
   }
 }
+
+export const removeTutorRequest = async (req: Request, res: Response) => {
+  const userId = req.user?.id
+  const { postId } = req.params
+
+  if (req.user?.role !== 'TEACHER') {
+    return res.status(400).json({ message: 'Only Author can delete!' })
+  }
+
+  try {
+    const data = await prisma.tutorRequest.findFirst({
+      where: {
+        postId,
+        userId
+      }
+    })
+    if (!data) {
+      return res.status(400).json({ message: 'Request not found!' })
+    }
+    await prisma.tutorRequest.delete({
+      where: {
+        id: data.id
+      }
+    })
+    res.status(200).json({ message: 'Remove successful!' })
+  } catch (err) {
+    res.status(400).json({ message: 'Remove failed!' })
+  }
+}
+
+// export const getLikePost = async (req: Request, res: Response) => {
+//   const { id } = req.params
+//   const cacheLike = await redis.get(`PostLike:${id}`)
+//   if (cacheLike) {
+//     res.json({ message: 'Get like post success!', like: JSON.parse(cacheLike) })
+//   }
+
+//   try {
+//     await prisma.like.findMany({
+//       where: {
+//         postId: id
+//       }
+//     })
+//     await redis.set(`PostLike:${id}`, JSON.stringify(cacheLike), 'EX', 3600)
+//     res.status(200).json({ message: 'Like post success!' })
+//   } catch (err) {
+//     res.status(400).json({ message: 'Like post failed!' })
+//   }
+// }
+
+// export const likePost = async (req: Request, res: Response) => {
+//   const { id } = req.params
+//   const userId = req.user?.id
+//   try {
+//     await prisma.like.create({
+//       data: {
+//         postId: id,
+//         userId
+//       }
+//     })
+
+//     const likes = await prisma.like.findMany({
+//       where: {
+//         postId: id
+//       }
+//     })
+//     await redis.set(`PostLike:${id}`, JSON.stringify(likes), 'EX', 3600)
+
+//     res.status(200).json({ message: 'Like post success!' })
+//   } catch (err) {
+//     res.status(400).json({ message: 'Like post failed!' })
+//   }
+// }
 
 export const getUserAllPost = async (req: Request, res: Response) => {
   const userId = req.user?.id
@@ -238,7 +283,7 @@ export const getUserAllPost = async (req: Request, res: Response) => {
 
   const posts = await prisma.post.findMany({
     where: {
-      authorId: userId
+      userId
     }
   })
 

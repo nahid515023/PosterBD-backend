@@ -214,3 +214,797 @@ The table `public.User` does not exist in the current database. {"name":"PrismaC
 [2024-12-22 15:59:25] [auth-controller] [31merror[39m: Forgot password error {"error":{"name":"PrismaClientValidationError","clientVersion":"5.21.1"}}
 [2024-12-22 16:27:39] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
 [2025-01-01 11:49:52] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-03 01:15:05] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-04 01:55:45] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-04 03:19:35] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-04 21:25:02] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-06 00:43:24] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-06 01:10:40] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-07 01:43:08] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-13 02:08:30] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}
+[2025-01-13 03:53:48] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:86:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:54:09] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:86:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:56:24] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:87:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:56:53] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:87:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:58:11] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:86:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:59:01] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:86:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:59:43] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:86:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 03:59:56] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:86:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:01:54] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:87:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:05:18] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:05:33] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:06:21] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:07:24] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:07:25] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:07:26] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:07:28] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:12:29] [app] [31merror[39m: Chat connection error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:88:29\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at connecteUser (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:82:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 04:13:10] [app] [31merror[39m: User not found
+[2025-01-13 22:00:42] [app] [31merror[39m: Connection already exists
+[2025-01-13 22:26:46] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:26:46] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:32:36] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:32:36] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:33:14] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:33:14] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:33:59] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:33:59] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:34:17] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:34:17] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:36:11] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:36:11] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:37:54] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:37:54] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:38:04] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:38:04] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connected-users",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connected-users\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:49:15] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connectedUsers",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connectedUsers\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:49:46] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connectedUsers",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connectedUsers\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:49:47] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connectedUsers",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connectedUsers\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:49:50] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "connectedUsers",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"connectedUsers\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 22:54:32] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:55:01] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:55:02] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:55:03] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:55:03] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:55:03] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:55:29] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 22:58:41] [app] [31merror[39m: Connected users request error: Cannot read properties of undefined (reading 'id') {"stack":"TypeError: Cannot read properties of undefined (reading 'id')\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:162:26\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:157:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)"}
+[2025-01-13 23:45:55] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "22297f58-c924-4468-99ec-033db976e731",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"22297f58-c924-4468-99ec-033db976e731\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 23:45:59] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "Asif",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"Asif\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 23:47:35] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "22297f58-c924-4468-99ec-033db976e731",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"22297f58-c924-4468-99ec-033db976e731\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 23:48:13] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "22297f58-c924-4468-99ec-033db976e731",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"22297f58-c924-4468-99ec-033db976e731\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 23:54:38] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36
+
+  10 try {
+  11   logger.info('Processing chat request')
+  12   const connectedId = req.params
+→ 13   const chat = await prisma.chat.findMany({
+         where: {
+           connectedId: {
+             connectedId: "22297f58-c924-4468-99ec-033db976e731",
+             ~~~~~~~~~~~
+       ?     equals?: String | StringFieldRefInput,
+       ?     in?: String[] | ListStringFieldRefInput,
+       ?     notIn?: String[] | ListStringFieldRefInput,
+       ?     lt?: String | StringFieldRefInput,
+       ?     lte?: String | StringFieldRefInput,
+       ?     gt?: String | StringFieldRefInput,
+       ?     gte?: String | StringFieldRefInput,
+       ?     contains?: String | StringFieldRefInput,
+       ?     startsWith?: String | StringFieldRefInput,
+       ?     endsWith?: String | StringFieldRefInput,
+       ?     mode?: QueryMode,
+       ?     not?: String | NestedStringFilter
+           }
+         }
+       })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:13:36\n\n  10 try {\n  11   logger.info('Processing chat request')\n  12   const connectedId = req.params\n→ 13   const chat = await prisma.chat.findMany({\n         where: {\n           connectedId: {\n             connectedId: \"22297f58-c924-4468-99ec-033db976e731\",\n             ~~~~~~~~~~~\n       ?     equals?: String | StringFieldRefInput,\n       ?     in?: String[] | ListStringFieldRefInput,\n       ?     notIn?: String[] | ListStringFieldRefInput,\n       ?     lt?: String | StringFieldRefInput,\n       ?     lte?: String | StringFieldRefInput,\n       ?     gt?: String | StringFieldRefInput,\n       ?     gte?: String | StringFieldRefInput,\n       ?     contains?: String | StringFieldRefInput,\n       ?     startsWith?: String | StringFieldRefInput,\n       ?     endsWith?: String | StringFieldRefInput,\n       ?     mode?: QueryMode,\n       ?     not?: String | NestedStringFilter\n           }\n         }\n       })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-13 23:56:08] [app] [31merror[39m: Chat request error: 
+Invalid `prisma.chat.findMany()` invocation in
+/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:14:36
+
+  11 logger.info('Processing chat request')
+  12 const connectedId = req.params
+  13 console.log(connectedId)
+→ 14 const chat = await prisma.chat.findMany({
+       where: {
+         connectedId: {
+           connectedId: "22297f58-c924-4468-99ec-033db976e731",
+           ~~~~~~~~~~~
+     ?     equals?: String | StringFieldRefInput,
+     ?     in?: String[] | ListStringFieldRefInput,
+     ?     notIn?: String[] | ListStringFieldRefInput,
+     ?     lt?: String | StringFieldRefInput,
+     ?     lte?: String | StringFieldRefInput,
+     ?     gt?: String | StringFieldRefInput,
+     ?     gte?: String | StringFieldRefInput,
+     ?     contains?: String | StringFieldRefInput,
+     ?     startsWith?: String | StringFieldRefInput,
+     ?     endsWith?: String | StringFieldRefInput,
+     ?     mode?: QueryMode,
+     ?     not?: String | NestedStringFilter
+         }
+       }
+     })
+
+Unknown argument `connectedId`. Available options are marked with ?. {"name":"PrismaClientValidationError","clientVersion":"6.2.1","stack":"PrismaClientValidationError: \nInvalid `prisma.chat.findMany()` invocation in\n/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:14:36\n\n  11 logger.info('Processing chat request')\n  12 const connectedId = req.params\n  13 console.log(connectedId)\n→ 14 const chat = await prisma.chat.findMany({\n       where: {\n         connectedId: {\n           connectedId: \"22297f58-c924-4468-99ec-033db976e731\",\n           ~~~~~~~~~~~\n     ?     equals?: String | StringFieldRefInput,\n     ?     in?: String[] | ListStringFieldRefInput,\n     ?     notIn?: String[] | ListStringFieldRefInput,\n     ?     lt?: String | StringFieldRefInput,\n     ?     lte?: String | StringFieldRefInput,\n     ?     gt?: String | StringFieldRefInput,\n     ?     gte?: String | StringFieldRefInput,\n     ?     contains?: String | StringFieldRefInput,\n     ?     startsWith?: String | StringFieldRefInput,\n     ?     endsWith?: String | StringFieldRefInput,\n     ?     mode?: QueryMode,\n     ?     not?: String | NestedStringFilter\n         }\n       }\n     })\n\nUnknown argument `connectedId`. Available options are marked with ?.\n    at wn (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at Vn.handleRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6982)\n    at Vn.handleAndLogRequestError (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6663)\n    at Vn.request (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:121:6370)\n    at async l (/home/nahid/Desktop/myTutor/backend/node_modules/@prisma/client/runtime/library.js:130:9617)"}
+[2025-01-14 23:23:03] [app] [31merror[39m: Connected users request error: "[object Object]" is not valid JSON {"stack":"SyntaxError: \"[object Object]\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:168:44\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:165:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)"}
+[2025-01-14 23:23:05] [app] [31merror[39m: Connected users request error: "[object Object]" is not valid JSON {"stack":"SyntaxError: \"[object Object]\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:168:44\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:165:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)"}
+[2025-01-14 23:23:05] [app] [31merror[39m: Connected users request error: "[object Object]" is not valid JSON {"stack":"SyntaxError: \"[object Object]\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:168:44\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:165:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)"}
+[2025-01-14 23:23:25] [app] [31merror[39m: Connected users request error: "[object Object]" is not valid JSON {"stack":"SyntaxError: \"[object Object]\" is not valid JSON\n    at JSON.parse (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:168:44\n    at Generator.next (<anonymous>)\n    at /home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:4:12)\n    at getConnectedUsers (/home/nahid/Desktop/myTutor/backend/src/controllers/chat.ts:165:5)\n    at Layer.handle [as handle_request] (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/nahid/Desktop/myTutor/backend/node_modules/express/lib/router/route.js:119:3)"}
+[2025-01-15 01:30:14] [app] [31merror[39m: Uncaught Exception: EIO: i/o error, write {"errno":-5,"syscall":"write","code":"EIO","stack":"Error: EIO: i/o error, write\n    at writeSync (node:fs:923:3)\n    at SyncWriteStream._write (node:internal/fs/sync_write_stream:27:5)\n    at writeOrBuffer (node:internal/streams/writable:572:12)\n    at _write (node:internal/streams/writable:501:10)\n    at SyncWriteStream.Writable.write (node:internal/streams/writable:510:10)\n    at Console.log (/home/nahid/Desktop/myTutor/backend/node_modules/winston/lib/winston/transports/console.js:87:23)\n    at Console._write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/modern.js:82:19)\n    at writeOrBuffer (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)\n    at _write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)\n    at Console.Writable.write (/home/nahid/Desktop/myTutor/backend/node_modules/winston-transport/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)"}

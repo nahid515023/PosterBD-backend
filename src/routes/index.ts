@@ -1,14 +1,16 @@
 import { Router } from 'express'
 import authRoutes from './auth'
-import profileRoutes from './profile'
 import postRoutes from './post'
-import notificationRouter from './notification'
+import profileRoutes from './profile'
+import chatRouter from './chat'
+
 
 
 const rootRouter: Router = Router()
 
 rootRouter.use('/auth',authRoutes)
 rootRouter.use('/profile',profileRoutes)
-rootRouter.use('/post',postRoutes)
-rootRouter.use('/notifications',notificationRouter);
+rootRouter.use('/posts',postRoutes)
+rootRouter.use('/chat',chatRouter);
+// rootRouter.use('/notifications',notificationRouter);
 export default rootRouter

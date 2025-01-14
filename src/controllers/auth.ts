@@ -1,4 +1,4 @@
-import e, { NextFunction, Request, Response } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import { logInSchema, signUpSchema } from '../schema/users'
 import { prisma } from '../index'
 import { BadRequestException } from '../exceptions/bad-request'
@@ -12,7 +12,7 @@ import { JWT_SECRET, PORT } from '../secrets'
 import { createLogger } from '../services/logger'
 import { sanitizeInput } from '../utils/sanitizer'
 import EmailService from '../services/email'
-import { Role } from '@prisma/client'
+
 
 const logger = createLogger('auth-controller')
 
